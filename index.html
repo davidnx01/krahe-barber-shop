@@ -1,0 +1,298 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>KRAHË Barber Shop · tradičný barbershop v Martine — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre KRAHË Barber Shop, Jesenského 27, Martin. Ukážka od webdavid.sk.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+<style>
+:root{--steel:#D8DBD8;--steel2:#C9CDCA;--ink:#131615;--ox:#8A1C1C;--bone:#ECEDEA;--hair:rgba(19,22,21,.18);--bk:'Pirata One',serif;--sf:'IBM Plex Serif',Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--steel);color:var(--ink);font:400 17px/1.6 var(--sf);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,svg{max-width:100%;height:auto;display:block}
+:focus-visible{outline:2px solid var(--ox);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.note{background:var(--ink);color:var(--bone);font-size:13px;line-height:1.4;padding:9px 28px;text-align:center}
+.lbl{font:600 12px/1.3 var(--sf);letter-spacing:.16em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums lining-nums}
+
+/* header: lišta nadstavcov */
+.top{border-bottom:1px solid var(--hair)}
+.top .wrap{display:flex;align-items:center;gap:32px;min-height:76px}
+.mark{font:400 34px/1 var(--bk);text-decoration:none;letter-spacing:.01em}
+.guards{display:flex;gap:4px;margin-left:auto;list-style:none}
+.guards a{display:flex;align-items:center;gap:9px;text-decoration:none;padding:10px 12px;min-height:44px;font-size:15px}
+.guards b{display:grid;place-items:center;width:26px;height:30px;background:var(--ink);color:var(--steel);font:400 17px/1 var(--bk);border-radius:3px 3px 9px 9px}
+.guards a:hover span{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.tel{font-weight:600;text-decoration:none;white-space:nowrap;padding:10px 0}
+.tel:hover{color:var(--ox)}
+
+/* hero */
+.hero{padding:64px 0 0}
+.hero .hg{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:end}
+.hero .lbl{color:var(--ox);margin-bottom:18px}
+h1{font:400 clamp(76px,13vw,168px)/.86 var(--bk);letter-spacing:-.01em}
+h1 small{display:block;font:italic 400 clamp(22px,2.6vw,34px)/1.2 var(--sf);letter-spacing:0;margin-top:14px}
+.claim{margin:30px 0 0;max-width:30em;font-size:19px}
+.claim q{font-weight:600}
+.claim cite{display:block;font-style:normal;font-size:13px;opacity:.7;margin-top:4px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;min-height:50px;padding:0 24px;text-decoration:none;font-weight:600;border:1.5px solid var(--ink);transition:background .2s,color .2s}
+.btn.solid{background:var(--ox);border-color:var(--ox);color:#fff}
+.btn.solid:hover{background:var(--ink);border-color:var(--ink)}
+.btn:not(.solid):hover{background:var(--ink);color:var(--steel)}
+.guardfig{position:relative;justify-self:center;width:100%;max-width:330px}
+.guardfig figcaption{display:flex;justify-content:space-between;border-top:1px solid var(--ink);padding-top:8px;margin-top:6px;font-size:13px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--ink)}
+.facts div{padding:18px 20px 20px 0}
+.facts div+div{padding-left:20px;border-left:1px solid var(--hair)}
+.facts strong{display:block;font:400 30px/1.1 var(--bk)}
+.facts span{font-size:14px;opacity:.8}
+.fade{margin-top:40px;color:var(--ink)}
+.fade svg{width:100%;height:auto}
+.fade-k{display:grid;grid-template-columns:repeat(8,1fr);border-top:1px solid var(--ink);font-size:12px;padding-top:6px}
+.fade-k span{padding-left:2px}
+
+/* sekčný oddeľovač — stupnica 1–8 */
+.scale{display:flex;align-items:flex-end;gap:14px;margin-bottom:34px}
+.scale ol{display:flex;align-items:flex-end;gap:5px;list-style:none}
+.scale li{width:9px;background:currentColor;opacity:.22;border-radius:0 0 4px 4px}
+.scale li.on{opacity:1;background:var(--ox)}
+.scale .lbl{padding-bottom:1px}
+
+/* money block */
+.serv{background:var(--ink);color:var(--bone);padding:84px 0 88px}
+.serv .scale li.on{background:#C8423A}
+.serv-g{display:grid;grid-template-columns:1fr 1.6fr;gap:56px}
+h2{font:400 clamp(44px,6vw,72px)/.95 var(--bk)}
+.serv-g p.lead{margin-top:20px;opacity:.82;max-width:22em}
+.serv ul{list-style:none;border-top:1px solid rgba(236,237,234,.3)}
+.serv li{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:baseline;padding:22px 0;border-bottom:1px solid rgba(236,237,234,.3)}
+.serv li q{font:italic 400 clamp(21px,2.3vw,27px)/1.3 var(--sf);quotes:"„" "“"}
+.serv li span{font-size:13px;opacity:.6;text-align:right}
+.tbd{margin-top:26px;display:flex;gap:16px;align-items:flex-start;padding:18px 20px;border:1px dashed rgba(236,237,234,.45);font-size:15px}
+.tbd b{color:#E36A5F;white-space:nowrap}
+
+/* o holičstve */
+.shop{padding:88px 0}
+.shop-g{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.shop blockquote{font:400 clamp(24px,2.8vw,34px)/1.35 var(--sf);margin-top:22px}
+.shop blockquote cite{display:block;font:400 13px/1.4 var(--sf);margin-top:12px;opacity:.7}
+.kit{list-style:none;border-top:1px solid var(--ink)}
+.kit li{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--hair)}
+.kit li b{font-weight:600}
+.kit li em{font-style:normal;color:var(--ox);font-weight:600}
+.src{font-size:13px;opacity:.7;margin-top:12px}
+
+/* hodnotenie */
+.rate{background:var(--steel2);padding:80px 0}
+.rate-g{display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+.medal{width:210px}
+.score{font:400 clamp(80px,10vw,128px)/.9 var(--bk)}
+.score small{font-size:.4em}
+.rate p{max-width:34em}
+.rate dl{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:22px;font-size:15px}
+.rate dt{font-weight:600}
+
+/* kontakt */
+.kont{padding:88px 0 96px}
+.kont-g{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:40px;border-top:1px solid var(--ink);padding-top:28px}
+.kont h3{margin-bottom:10px}
+.kont address{font-style:normal;font-size:22px;line-height:1.35}
+.kont a.big{font-size:22px;font-weight:600;text-decoration:none}
+.kont a.big:hover,.kont .lnk a:hover{color:var(--ox)}
+.hrs{list-style:none}
+.hrs li{display:flex;justify-content:space-between;max-width:260px;padding:4px 0;border-bottom:1px solid var(--hair)}
+.lnk{list-style:none;display:grid;gap:2px}
+.lnk a{display:inline-flex;min-height:44px;align-items:center;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+
+footer{background:var(--ink);color:var(--bone);padding:26px 0 30px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .mark{font-size:24px}
+.mbar{display:none}
+
+@media (max-width:900px){
+  .guards{display:none}
+  .tel{margin-left:auto}
+  .hero{padding-top:40px}
+  .hero .hg{grid-template-columns:1fr;gap:28px}
+  .guardfig{display:none}
+  .facts{grid-template-columns:1fr;margin-top:36px}
+  .facts div,.facts div+div{padding:14px 0;border-left:0;border-top:1px solid var(--hair)}
+  .facts div:first-child{border-top:0}
+  .fade svg{height:52px}
+  .fade-k{grid-template-columns:repeat(4,1fr)}
+  .fade-k span{white-space:nowrap;font-size:11px}
+  .fade-k span:nth-child(even){display:none}
+  .serv-g,.shop-g,.rate-g,.kont-g{grid-template-columns:1fr;gap:36px}
+  .serv,.shop,.rate,.kont{padding:60px 0}
+  .medal{width:140px}
+  .serv li{grid-template-columns:1fr}
+  .serv li span{text-align:left}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  .note{padding:8px 18px;font-size:12px}
+  .top .wrap{min-height:62px;gap:12px}
+  .mark{font-size:28px}
+  .tel{font-size:15px}
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+  .cta .btn{flex:1 1 100%;justify-content:center}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--ink);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;text-decoration:none;font-weight:600;color:var(--bone);border:1px solid rgba(236,237,234,.35)}
+  .mbar a:first-child{background:var(--ox);border-color:var(--ox);color:#fff}
+  .tbd{flex-direction:column;gap:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<p class="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</p>
+
+<header class="top"><div class="wrap">
+  <a class="mark" href="#">KRAHË</a>
+  <nav aria-label="Hlavná navigácia"><ul class="guards">
+    <li><a href="#sluzby"><b>2</b><span>Služby</span></a></li>
+    <li><a href="#holicstvo"><b>4</b><span>Holičstvo</span></a></li>
+    <li><a href="#hodnotenie"><b>6</b><span>Hodnotenie</span></a></li>
+    <li><a href="#kontakt"><b>8</b><span>Kontakt</span></a></li>
+  </ul></nav>
+  <a class="tel num" href="tel:+421902128927">0902 128 927</a>
+</div></header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hg">
+    <div>
+      <p class="lbl">Barber Shop · Jesenského 27 · Martin</p>
+      <h1 id="h1">KRAHË<small>Barber Shop</small></h1>
+      <p class="claim"><q>Prvý tradičný Barber Shop v Martine</q><cite>— tak sa predstavujú na Zľavomat.sk</cite></p>
+      <div class="cta">
+        <a class="btn solid" href="tel:+421902128927">Objednať sa telefonicky</a>
+        <a class="btn" href="https://www.instagram.com/krahe_barbershop/" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <figure class="guardfig" aria-hidden="true">
+      <svg viewBox="0 0 300 380" role="img">
+        <path d="M58 30h184a18 18 0 0 1 18 18v120H40V48a18 18 0 0 1 18-18z" fill="#131615"/>
+        <path d="M64 54h172" stroke="#D8DBD8" stroke-width="1" opacity=".35"/>
+        <text x="150" y="150" text-anchor="middle" font-family="Pirata One" font-size="96" fill="#D8DBD8">1</text>
+        <g fill="#131615">
+          <path d="M40 160h12v196q-6 12-12 0z"/><path d="M248 160h12v196q-6 12-12 0z"/>
+          <path d="M64 166h9v170q-4.5 9-9 0zM84 166h9v170q-4.5 9-9 0zM104 166h9v170q-4.5 9-9 0zM124 166h9v170q-4.5 9-9 0zM144 166h9v170q-4.5 9-9 0zM164 166h9v170q-4.5 9-9 0zM184 166h9v170q-4.5 9-9 0zM204 166h9v170q-4.5 9-9 0zM224 166h9v170q-4.5 9-9 0z"/>
+        </g>
+        <path d="M276 166v176M270 166h12M270 342h12" stroke="#8A1C1C" stroke-width="1.5" fill="none"/>
+        <text x="288" y="262" font-family="IBM Plex Serif" font-size="13" fill="#8A1C1C" transform="rotate(90 288 262)" text-anchor="middle">3 mm</text>
+      </svg>
+      <figcaption><span>nadstavec č. 1</span><span>prvý tradičný v Martine</span></figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <div class="facts">
+      <div><strong>2022–2026</strong><span>laureát ankety Orly Kaderníctva, zlatá medaila</span></div>
+      <div><strong class="num">9,8 / 10</strong><span>58 hodnotení na Orly Kaderníctva (1. 10. 2026)</span></div>
+      <div><strong class="num">Po–Pi 9–20</strong><span>podľa Zľavomat.sk — overiť</span></div>
+    </div>
+    <div class="fade" aria-hidden="true">
+      <svg viewBox="0 0 1200 82" preserveAspectRatio="none"><path d="M2 80l2-7M5 80l3-6M9 80l5-8M13 80l3-6M16 80l3-7M19 80l1-9M23 80l3-8M26 80l3-8M30 80l4-6M34 80l3-7M38 80l4-8M41 80l4-8M45 80l4-6M48 80l3-8M53 80l3-9M58 80l2-7M62 80l2-9M66 80l5-8M71 80l5-7M74 80l2-8M78 80l3-6M81 80l1-10M85 80l2-7M90 80l3-8M93 80l3-10M96 80l4-6M101 80l3-7M105 80l3-6M109 80l3-8M113 80l2-9M117 80l5-7M122 80l3-6M126 80l4-9M130 80l5-9M135 80l2-10M139 80l4-6M142 80l3-8M146 80l2-7M154 80l2-16M158 80l3-16M161 80l4-15M166 80l3-15M171 80l1-16M174 80l3-18M177 80l1-15M180 80l3-16M184 80l1-16M188 80l2-16M192 80l3-17M197 80l4-14M202 80l2-16M206 80l2-14M210 80l4-16M213 80l5-14M217 80l3-14M220 80l2-17M223 80l2-16M227 80l2-17M231 80l4-16M235 80l3-16M239 80l4-17M243 80l3-14M246 80l4-18M251 80l4-15M255 80l5-15M259 80l2-17M263 80l3-14M267 80l3-14M270 80l4-16M273 80l1-17M278 80l4-17M283 80l3-17M287 80l5-14M292 80l4-15M295 80l2-16M304 80l3-24M309 80l2-27M314 80l2-27M318 80l4-24M321 80l5-26M326 80l2-28M330 80l2-24M334 80l2-27M339 80l1-27M343 80l4-28M348 80l5-27M352 80l3-26M355 80l4-27M358 80l2-27M362 80l4-26M365 80l3-25M370 80l1-27M373 80l2-25M376 80l3-26M379 80l3-26M383 80l3-27M388 80l2-26M392 80l5-28M396 80l2-27M399 80l2-26M403 80l2-26M407 80l5-27M411 80l4-28M415 80l5-25M420 80l5-25M425 80l2-28M429 80l3-25M434 80l2-25M438 80l2-24M442 80l3-26M445 80l3-26M454 80l1-34M458 80l1-36M462 80l5-33M466 80l2-33M471 80l4-35M475 80l3-33M480 80l1-35M483 80l2-35M486 80l1-33M489 80l1-35M493 80l4-32M498 80l5-32M503 80l2-36M507 80l4-32M510 80l2-36M514 80l2-33M518 80l2-34M523 80l2-34M527 80l5-35M530 80l4-32M534 80l2-34M539 80l4-32M544 80l3-34M549 80l2-36M553 80l2-36M557 80l2-33M560 80l1-35M564 80l1-34M569 80l4-35M573 80l4-34M576 80l2-34M581 80l2-32M585 80l3-36M589 80l5-32M593 80l1-33M604 80l2-40M608 80l4-41M611 80l1-41M616 80l3-42M620 80l2-41M624 80l4-42M629 80l4-43M634 80l4-40M638 80l4-40M643 80l4-43M647 80l4-43M650 80l3-43M654 80l1-40M658 80l3-43M663 80l4-42M667 80l1-42M670 80l3-43M673 80l1-42M678 80l1-41M682 80l4-41M686 80l5-43M691 80l1-43M695 80l3-43M699 80l2-40M703 80l4-42M707 80l1-40M711 80l1-43M715 80l2-42M719 80l3-41M722 80l3-44M726 80l5-44M729 80l1-41M734 80l3-44M738 80l1-40M742 80l2-43M746 80l4-43M754 80l5-49M759 80l1-47M764 80l3-50M768 80l3-49M771 80l1-51M775 80l1-51M779 80l5-50M783 80l1-48M788 80l3-51M792 80l4-51M795 80l1-49M799 80l2-50M803 80l2-49M807 80l3-51M810 80l4-51M814 80l1-50M819 80l4-49M823 80l5-49M827 80l3-48M831 80l4-49M835 80l2-49M840 80l3-50M844 80l1-50M849 80l3-50M853 80l3-51M857 80l2-50M861 80l1-49M865 80l4-49M869 80l4-51M874 80l4-49M878 80l2-49M881 80l3-49M885 80l3-48M889 80l5-48M894 80l3-49M904 80l4-59M907 80l3-56M912 80l3-59M915 80l5-57M920 80l2-59M923 80l2-56M926 80l4-59M931 80l4-56M934 80l2-58M937 80l2-58M941 80l3-58M946 80l1-58M949 80l5-56M953 80l2-57M956 80l2-55M961 80l2-56M965 80l2-57M969 80l3-55M973 80l2-55M978 80l2-56M983 80l2-59M986 80l4-58M990 80l2-58M994 80l3-58M998 80l2-57M1002 80l2-56M1006 80l3-56M1010 80l3-59M1013 80l2-59M1018 80l1-55M1022 80l4-57M1026 80l5-57M1030 80l5-58M1034 80l2-57M1039 80l4-55M1044 80l5-59M1054 80l1-64M1058 80l3-63M1061 80l4-65M1066 80l4-64M1071 80l4-63M1075 80l5-64M1079 80l4-64M1084 80l3-63M1089 80l1-63M1092 80l1-66M1096 80l5-66M1100 80l2-64M1103 80l4-64M1107 80l2-67M1110 80l2-63M1115 80l3-66M1120 80l5-66M1125 80l3-64M1128 80l4-66M1132 80l2-65M1136 80l4-65M1139 80l3-65M1143 80l1-64M1146 80l3-65M1150 80l5-67M1153 80l1-64M1156 80l5-65M1161 80l2-64M1166 80l4-65M1169 80l2-66M1173 80l2-65M1177 80l2-64M1181 80l2-64M1185 80l3-64M1189 80l2-65M1192 80l5-66M1195 80l5-63" stroke="#131615" stroke-width="1.3" stroke-linecap="round" fill="none"/></svg>
+      <div class="fade-k num"><span>1 · 3 mm</span><span>2 · 6 mm</span><span>3 · 10 mm</span><span>4 · 13 mm</span><span>5 · 16 mm</span><span>6 · 19 mm</span><span>7 · 22 mm</span><span>8 · 25 mm</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="serv" id="sluzby" aria-labelledby="h-serv">
+  <div class="wrap">
+    <div class="scale"><ol aria-hidden="true"><li style="height:8px"></li><li class="on" style="height:14px"></li><li style="height:20px"></li><li style="height:26px"></li><li style="height:32px"></li><li style="height:38px"></li><li style="height:44px"></li><li style="height:50px"></li></ol><span class="lbl">Nadstavec 2 · 6 mm</span></div>
+    <div class="serv-g">
+      <div>
+        <h2 id="h-serv">Strih, brada, holenie</h2>
+        <p class="lead">Čo v KRAHË robia, popísané na profile Orly Kaderníctva. Na termín sa objednáte telefonicky.</p>
+      </div>
+      <div>
+        <ul>
+          <li><q>klasické strihy nožnicami</q><span>nožnice</span></li>
+          <li><q>moderné úpravy vykonávané strojčekom</q><span>strojček</span></li>
+          <li><q>tvarovanie a holenie fúzov</q><span>brada</span></li>
+          <li><q>kompletné holenie hlavy</q><span>britva</span></li>
+        </ul>
+        <p class="tbd"><b>Ukážka návrhu:</b> cenník a dĺžku jednotlivých služieb doplní podnik. Zatiaľ ich nemá zverejnené na žiadnom portáli.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="holicstvo" aria-labelledby="h-shop">
+  <div class="wrap">
+    <div class="scale"><ol aria-hidden="true"><li style="height:8px"></li><li style="height:14px"></li><li style="height:20px"></li><li class="on" style="height:26px"></li><li style="height:32px"></li><li style="height:38px"></li><li style="height:44px"></li><li style="height:50px"></li></ol><span class="lbl">Nadstavec 4 · 13 mm</span></div>
+    <div class="shop-g">
+      <div>
+        <h2 id="h-shop">Holičstvo v centre</h2>
+        <blockquote><p>„Pôsobí v centre Martina ako jeden z prvých tradičných holičstiev v meste.“</p><cite>— profil na Orly Kaderníctva</cite></blockquote>
+      </div>
+      <div>
+        <h3 class="lbl" style="margin-bottom:14px">Pred návštevou</h3>
+        <ul class="kit">
+          <li><b>Platba</b><em>len v hotovosti — karty neprijímajú</em></li>
+          <li><b>Parkovanie</b><span>zadarmo</span></li>
+          <li><b>Wi-Fi</b><span>zadarmo</span></li>
+          <li><b>Bezbariérový prístup</b><span>nie</span></li>
+        </ul>
+        <p class="src">Podľa profilu na Zľavomat.sk (1. 10. 2026) — overiť.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rate" id="hodnotenie" aria-labelledby="h-rate">
+  <div class="wrap">
+    <div class="scale"><ol aria-hidden="true"><li style="height:8px"></li><li style="height:14px"></li><li style="height:20px"></li><li style="height:26px"></li><li style="height:32px"></li><li class="on" style="height:38px"></li><li style="height:44px"></li><li style="height:50px"></li></ol><span class="lbl">Nadstavec 6 · 19 mm</span></div>
+    <div class="rate-g">
+      <svg class="medal" viewBox="0 0 220 220" aria-hidden="true">
+        <circle cx="110" cy="110" r="100" fill="none" stroke="#131615" stroke-width="2"/>
+        <circle cx="110" cy="110" r="84" fill="#131615"/>
+        <g stroke="#D8DBD8" stroke-width="1.2" fill="none"><circle cx="110" cy="110" r="76"/></g>
+        <text x="110" y="100" text-anchor="middle" font-family="Pirata One" font-size="34" fill="#D8DBD8">Laureát</text>
+        <text x="110" y="134" text-anchor="middle" font-family="IBM Plex Serif" font-size="17" fill="#D8DBD8" letter-spacing="1">2022–2026</text>
+        <text x="110" y="156" text-anchor="middle" font-family="IBM Plex Serif" font-size="10" fill="#D8DBD8" letter-spacing="2">ORLY KADERNÍCTVA</text>
+      </svg>
+      <div>
+        <h2 id="h-rate" class="score num">9,8<small> / 10</small></h2>
+        <p>Súhrnné hodnotenie na portáli Orly Kaderníctva zo 58 hodnotení. Barber shop je laureátom ankety so zlatou medailou v rokoch 2022–2026.</p>
+        <dl class="num"><div><dt>4,9 / 5</dt><dd>47 hodnotení</dd></div><div><dt>4,8 / 5</dt><dd>11 hodnotení</dd></div><div><dt>Zdroj</dt><dd>orlykadernictva.eu, 1. 10. 2026</dd></div></dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kont" id="kontakt" aria-labelledby="h-kont">
+  <div class="wrap">
+    <div class="scale"><ol aria-hidden="true"><li style="height:8px"></li><li style="height:14px"></li><li style="height:20px"></li><li style="height:26px"></li><li style="height:32px"></li><li style="height:38px"></li><li style="height:44px"></li><li class="on" style="height:50px"></li></ol><span class="lbl">Nadstavec 8 · 25 mm</span></div>
+    <h2 id="h-kont" style="margin-bottom:36px">Kde nás nájdete</h2>
+    <div class="kont-g">
+      <div>
+        <h3 class="lbl">Adresa</h3>
+        <address>Jesenského 27<br>036 01 Martin</address>
+        <ul class="lnk"><li><a href="https://www.google.com/maps/search/KRAH%C3%8B+Barber+Shop+Martin" rel="noopener">Otvoriť v Mapách Google</a></li></ul>
+      </div>
+      <div>
+        <h3 class="lbl">Objednanie</h3>
+        <a class="big num" href="tel:+421902128927">+421 902 128 927</a>
+        <ul class="lnk">
+          <li><a href="https://www.facebook.com/krahebarbershop/" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/krahe_barbershop/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="lbl">Otváracie hodiny</h3>
+        <ul class="hrs num"><li><span>Pondelok – piatok</span><span>9:00–20:00</span></li><li><span>Sobota – nedeľa</span><span>zatvorené</span></li></ul>
+        <p class="src">Podľa Zľavomat.sk, overiť — pred cestou radšej zavolajte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span class="mark">KRAHË</span><span>Neoficiálny návrh webu · webdavid.sk · 2026</span></div></footer>
+
+<nav class="mbar" aria-label="Rýchle akcie"><a href="tel:+421902128927">Zavolať</a><a href="https://www.google.com/maps/search/KRAH%C3%8B+Barber+Shop+Martin" rel="noopener">Mapa</a></nav>
